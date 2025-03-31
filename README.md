@@ -36,7 +36,7 @@ spark.sql(query).show()
 print("--- %s seconds ---" % (time.time() - start_time))
 
 ```
-### partitioning implementation
+### Partitioning Implementation
 ```
 Partition by the "date_built" field on the formatted parquet home sales data 
 sparkSQL.write.partitionBy('date_built').mode('overwrite').parquet('homes_parquet')
