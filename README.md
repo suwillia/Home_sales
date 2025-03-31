@@ -41,7 +41,7 @@ print("--- %s seconds ---" % (time.time() - start_time))
 Partition by the "date_built" field on the formatted parquet home sales data 
 sparkSQL.write.partitionBy('date_built').mode('overwrite').parquet('homes_parquet')
 '''
-
+```
 ### Results
 Cached tables showed marked speed increases while parquet data was faster that original query, it was still slower than the cached version.
 
